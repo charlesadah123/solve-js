@@ -1,0 +1,103 @@
+
+/* Styles specific to other views: toggle, filter etc */
+
+body > header h1.page-title {
+    font-size: 1.3em;
+}
+
+body > article {
+    display: none;
+}
+
+body > header {
+    justify-content: space-between;
+}
+
+body > header a#homeBtn {
+    font-size: 1.1em;
+    padding: 10px 15px;
+    background: var(--textColor);
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+body > header a#homeBtn:hover,
+body > header a#homeBtn:focus {
+    outline: none;
+    background: white;
+    border: 2px solid transparent;
+    border-bottom: 2px solid var(--themeColor);
+    color: rgb(240, 64, 0);
+    box-shadow: 5px 5px 10px rgb(230, 230, 230);
+    transition: color 0.2s linear,
+                border 0.17s linear,
+                background-color 0.17s linear;
+}
+
+body > div#root {
+    display: block;
+}
+
+div#root > main  {
+    background: white;
+    border: 2px solid var(--greyLight);
+    padding: 50px 0 0 0;
+}
+
+
+/* General style for elements inside main tag - see other-ext folder for spcific views */
+section {
+    width: max-content;
+    margin: 0 auto;
+}
+
+button {
+    outline: none;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: var(--textColor);
+    width: 100%;
+    color: white;
+    box-shadow: 1px 1px 15px #c5c5c5;
+    transition: color 0.2s linear,
+                border 0.17s linear,
+                background-color 0.17s linear;
+}
+
+button:hover, button:focus {
+    background: white;
+    color: var(--textColor);
+    border-bottom: 3px solid var(--textColor);
+}
+
+
+/*===========
+media-queries
+============*/
+
+@media screen and (min-width: 370px) {
+    body > header h1.page-title {
+        font-size: 1.8em;
+    }
+
+    body > header a#homeBtn {
+        font-size: 1.4em;
+    }
+
+    button {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    body > header h1.page-title {
+        font-size: 2.5em;
+    }
+
+    body > header a#homeBtn {
+        padding: 15px 20px;
+    }
+}

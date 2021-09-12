@@ -1,0 +1,76 @@
+
+@font-face {
+    font-family: 'Amita';
+    src: url('../fonts/Amita/Amita-Regular.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+    font-display: swap;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+body > * {
+    max-width: 93%;
+    margin: 0 auto;
+}
+
+body > header {
+    height: var(--header-sm);
+    display: flex;
+    align-items: center;
+}
+
+body a {
+   display: block;
+}
+
+body a:hover, 
+body a:focus {
+     transition: color 0.2s linear,
+                 border 0.17s linear;
+}
+
+body > article,
+div#root > main {
+    min-height: calc(100vh - var(--header-sm));
+    height: unset;
+}
+
+
+/*===========
+media-queries
+============*/
+
+@media screen and (min-width: 370px) {
+    body > header {
+        height: var(--header-lg);
+    }
+
+    body > article, 
+    div#root > main {
+        min-height: calc(100vh - var(--header-lg));
+    }
+}
+
+@media screen and (min-width: 1010px) {
+    body > header {
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    body > header {
+        height: var(--header-sm);
+    }
+
+    body > article, 
+    div#root > main {
+        min-height: calc(100vh - var(--header-sm));
+    }
+}
