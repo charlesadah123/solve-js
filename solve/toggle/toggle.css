@@ -1,8 +1,6 @@
 
 
-/*
-
-You can use one or both classes
+/*You can use one or both classes */
 
 .on {
     color: teal;
@@ -10,10 +8,11 @@ You can use one or both classes
     box-shadow: 1px 1px 20px rgba(0, 187, 187, 0.9);
 }
 
+
 .off {
     color: rgba(41, 41, 41, 0.4);
     border: 2px solid rgba(41, 41, 41, 0.4);
     box-shadow: 1px 1px 10px rgb(200, 200, 200);
 }
 
-*/
+
